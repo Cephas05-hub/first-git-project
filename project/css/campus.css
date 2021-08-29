@@ -14,7 +14,7 @@ a{
     color: white;
 }
 .campus{
-    background-image: linear-gradient(#222,#1313),url(banner.png);
+    background-image: linear-gradient(#222,#1313),url(../img/banner.png);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -369,7 +369,7 @@ nav{
 /* banner */
 .various{
     text-align: center;
-    background-image: linear-gradient(#222,rgba(93, 95, 93, 0.2)),url(banner2.jpg);
+    background-image: linear-gradient(#222,rgba(93, 95, 93, 0.2)),url(../img/banner2.jpg);
     background-position: right center;
     background-size: cover;
     width: 66%;
@@ -413,7 +413,7 @@ nav{
 /* about */
 .campuss{
     min-height: 500px;
-    background-image: linear-gradient(#1313,#131313),url(background.jpg);
+    background-image: linear-gradient(#1313,#131313),url(../img/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
