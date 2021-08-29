@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.campus{
+    background-image: linear-gradient(#222,#1313),url(banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    margin: -2% auto;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+.nav-links ul{
+    display: inline-block;
+    list-style: none;
+}
+.nav-links ul li{
+    display: inline-block;
+    margin: 2% 35px 2% 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    position: relative;
+    cursor: pointer;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    background: coral;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s linear;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.menu,.nav-lnks{
+    display: none;
+}
+.information{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 12% auto;
+    position: relative;
+}
+.information h3 span{
+    font-weight: 400;
+    font-size: 2em;
+    text-transform: uppercase;
+
+}
+.information h3 span::before{
+    content: '';
+    color: rgb(10, 2, 27);
+    animation: pigs 3s infinite;
+}
+@keyframes pigs{
+    0%{
+        content: 'WORLDS BIGEST UNIVERSITY';
+    }
+    100%{
+        content: 'ENROLL NOW';
+    }
+}
+.information p{
+    margin-top: 25px;
+    font-size: 1em;
+    font-weight: 200;
+}
+.visit-btn{
+    margin-top: 25px;
+    padding: 10px 20px;
+    color: white;
+    background: red;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+}
+.visit-btn:hover{
+    background: coral;
+}
+
+@media(max-width:800px){
+  .nav-links{
+      display: none;
+  }
+  .information h3{
+      font-size: .8em;
+  }
+  .degree{
+      flex-direction: column;
+  }
+  .information p{
+      font-size: .8em;
+  }
+  .information{
+      margin: 45% auto;
+  }
+  .nav-lnks,.menu{
+      display: block;
+      margin-right: 25px;
+  }
+  .logo img{
+      width: 30%;
+      margin-right: 200px;
+  }
+  .nav-lnks{
+      right: 0;
+      position: absolute;
+      top: -220px;
+      background: purple;
+      width: 160px;
+      text-align: left;
+      color: white;
+      cursor: pointer; 
+       transition: 1s top;
+       
+  }
+  .nav-lnks ul{
+      list-style: none;
+  }
+  .nav-lnks ul li{
+      margin: 15px;
+      text-transform: uppercase;
+      position: relative;
+      
+  }
+  .close{
+      margin-left: 120px;
+      margin-top: 10px;
+  }
+  .nav-lnks ul li::after{
+    content: '';
+    background: coral;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s linear;
+  }
+  .nav-lnks ul li:hover::after{
+    width: 70%;
+}
+}
+
+
+/* courses */
+.course{
+    margin:5% auto;
+}
+.course h1{
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #3d3c3c;
+    
+}
+.course p{
+    text-align: center;
+    font-size: .8em;
+    
+}
+.course p,.course h1{
+    margin-bottom: 10px;
+}
+.row p{
+    font-size: .9em;
+}
+.degree{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.row h1{
+    margin-bottom: 10px;
+}
+.row{
+    flex-basis: 30%;
+    box-shadow: 10px 5px 4px 2px grey;
+    transition: 1s;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.row:hover{
+    transform: translateY(-10px);
+}
+/* course */
+@media(max-width:600px){
+    .degree{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    .row h1{
+        font-size: 1em;
+    }
+    .row p {
+        padding: 30px 0px;
+        line-height: 1.3em;
+        margin: 10px 0;
+    }
+    .profil{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* buildings */
+.london{
+    margin:auto;
+    padding: 2% 20px;
+}
+.london h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #3d3c3c;
+}
+.global{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.global img{
+    width: 80%;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+}
+.global p{
+    text-transform: uppercase;
+    font-size: 1em;
+    top: -85%;
+    position: absolute;
+    color: rgb(245, 236, 236);
+    opacity: -1;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    
+}
+.global p:hover{
+    background: rgb(154, 11, 236);
+    opacity: 1;
+    transform: translateY(-30px);
+}
+.glo-design p{
+    margin-bottom: 10%;
+    position: relative;
+}
+@media(max-width:500px){
+    .global{
+        flex-direction: column;
+    }
+    .global img{
+        width: 80%;
+    }
+    .profil h3{
+        text-align: center;
+    }
+}
+
+/* facilities */
+.facility{
+    text-align: center;
+    justify-content: center;
+}
+.facility h1{
+    text-transform: uppercase;
+    color: #3d3c3c;
+}
+.facility h1, p{
+    margin-bottom: 15px;
+}
+.ours img{
+    width: 90%;
+    border-radius: 10px;
+}
+.fact{
+    display: flex;
+    justify-content: space-between;
+}
+.fact p{
+    margin-top: 10px;
+    color: rgb(75, 73, 73);
+}
+@media(max-width:600px){
+    .fact{
+        flex-direction: column;
+    }
+}
+
+/* facilities */
+.stude{
+    margin-top: 50px;
+}
+.stude h1{
+    text-transform: uppercase;
+    color: rgb(75, 73, 73);
+}
+ .hello h1,p{
+    text-align: center;
+} 
+.pro img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.students{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.profil{
+    display: flex;
+    background-color: rgb(250, 235, 243);
+    box-shadow: 3px 4px 2px 1px grey;
+    padding: 25px 15px;
+}
+.profil p,h3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+@media(max-width:600px){
+    .students{
+        flex-direction: column;
+    } 
+    .profil{
+        padding: 40px 10px;
+    }   
+}
+
+/* banner */
+.various{
+    text-align: center;
+    background-image: linear-gradient(#222,rgba(93, 95, 93, 0.2)),url(banner2.jpg);
+    background-position: right center;
+    background-size: cover;
+    width: 66%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin: 5% auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.various p, h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 50px ;
+}
+.various button{
+    background-color: transparent;
+    left: 50px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+}
+@media(max-width:500px){
+    .various{
+        flex-direction: column;
+        width: 90%;
+        height: 55%;
+        font-size: .7em;
+    }  
+}
+/* footer */
+.foot{
+    text-align: center;
+}
+.foot h2{
+    margin-bottom: 20px;
+}
+/* about */
+.campuss{
+    min-height: 500px;
+    background-image: linear-gradient(#1313,#131313),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    margin: -2% auto;
+}
+.laage{
+    display: flex;
+    flex-basis: 25%;
+    margin: 3% 2%;
+}
+.univer img{
+    width: 70%;
+}
+.univer{
+    margin: auto 5%;
+}
+.univer p{
+    line-height: 2em;
+    margin-top: 10px;
+}
+.ex-btn{
+    background-color: coral;
+    cursor: pointer;
+    padding: 10px 35px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    transition: .5s;
+    
+}
+.ex-btn:hover{
+    background-color: purple;  
+}
+@media (max-width:600px){
+    .laage{
+        flex-direction: column;
+    }
+    .abt h1{
+        margin: 44% auto;
+    }
+}
+/* blog */
+.blog{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% auto;
+}
+.right{
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.left{
+    flex-direction: column;
+    width: 25%;
+}
+.right img{
+    width: 70%;
+    height: 40%;
+    border-radius: 8px;
+}
+.blk h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.blk p{
+    margin-top: 20px;
+    font-size: 1em;
+}
+.post{
+    text-align: center;
+    background-color: coral;
+    color: white;
+}
+.graduate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+@media(max-width:800px){
+    .blog{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .right img{
+         width: 100%;
+        height: 20%;
+        margin: auto 18%;
+    }
+    .left{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .blk p{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
